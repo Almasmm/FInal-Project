@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Glass+Antiqua&family=Poppins:wght@500&display=swap");
+/* 
+font-family: 'DM Sans', sans-serif;
+font-family: 'Glass Antiqua', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Bitter", serif;
+}
+
+html,
+body {
+  letter-spacing: 1px;
+  color: white;
+}
+
+.bg-custom-5 {
+  background-image: url(img/timeline-bg.jpg);
+  height: 100%;
+  width: 100%;
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.navbar {
+  margin-top: 80px;
+}
+
+.navbar-header {
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.logo-img {
+  max-height: 70px;
+}
+
+.navbar-nav {
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.nav-item {
+  font-size: 28px;
+  padding: 5px;
+  margin-right: 30px;
+  border-radius: 24px;
+}
+
+.navbar-nav-scroll .nav-item {
+  transition: background-color 0.3s; 
+}
+
+.navbar-nav-scroll .nav-item:hover {
+  background-color: #007bff; 
+}
+
+.navbar-nav-scroll .nav-item:hover a {
+  color: yellow; 
+}
+
+/* Текущий активный элемент */
+.navbar-nav-scroll .nav-item.active {
+  background-color: #007bff;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; 
+}
+
+.custom-footer {
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.container-ft {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-btn {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.footer-text {
+  background-color: #007bff;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  width: 70%;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.footer-text p {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  color: yellow;
+  padding-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* TIMELINE */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title-tl {
+	margin-top: 50px;
+  text-align: center;
+}
+
+.title-tl h1 {
+  color: #fff;
+  margin: 0.3em;
+  font-size: 3em;
+}
+
+.title-tl p {
+  color: #007bff;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+}
+
+.checkpoint h2 {
+  margin-bottom: 0.5em;
+}
+
+.timeline {
+  color: #fff;
+  margin: 5em auto;
+  max-width: 34em;
+	margin-top: 50px;
+}
+
+.timeline::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+}
+
+.checkpoint {
+  max-width: 34em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: relative;
+}
+
+.checkpoint div {
+  border: 2px solid #888;
+  border-radius: 1em;
+  padding: 1.5em;
+}
+
+.checkpoint p {
+	font-weight: 600;
+  line-height: 27px;
+  color: #ccc;
+}
+
+.checkpoint:nth-child(odd) {
+  border-left: 3px solid #888;
+  padding-left: 3em;
+  transform: translateX(17em);
+}
+
+.checkpoint:nth-child(even) {
+  border-right: 3px solid #888;
+  padding-right: 3em;
+  transform: translateX(-16.85em);
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before {
+  content: "";
+  background: #888;
+  width: 3em;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd)::before {
+  left: 0;
+}
+
+.checkpoint:nth-child(even)::before {
+  right: 0;
+}
+
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before {
+  content: "";
+  background: #fff;
+  box-shadow: 0 0 0.5em #007bff;
+  width: 0.8em;
+  height: 0.8em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) div::before {
+  left: -0.5em;
+}
+
+.checkpoint:nth-child(even) div::before {
+  right: -0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .timeline {
+    width: 80vw;
+  }
+
+  .timeline .checkpoint {
+    width: 100%;
+    transform: none;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+  }
+
+  .timeline .checkpoint::before {
+    width: 3px;
+    height: 4em;
+    top: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline .checkpoint div::before {
+    top: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+.center-video {
+	margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.for-video {
+	width: 800px;
+	height: 450px;
+}
